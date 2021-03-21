@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Calendar.css" />
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1>
+              <span id="mh">July</span>
+              <span id="yr">
+                <select name="yr" id="Syr"></select>
+              </span>
+            </h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div class="Sun">Sun</div>
+          <div class="Mon">Mon</div>
+          <div class="Tue">Tue</div>
+          <div class="Wed">Wed</div>
+          <div class="Thu">Thu</div>
+          <div class="Fri">Fri</div>
+          <div class="Sat">Sat</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </div>
+    <script src="Calendar.js"></script>
+  </body>
+</html>

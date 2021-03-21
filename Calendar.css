@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #050e49;
+  color: #003;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  width: 53rem;
+  height: 52rem;
+  background-color: #394450;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
+}
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #d1446e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
+}
+.month i {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+.month h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+}
+.month p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+}
+.weekdays {
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+.weekdays div {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  width: calc(52.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
+}
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+.days div {
+  font-size: 1.7rem;
+  margin: 0.3rem;
+  width: calc(47.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+.days div:hover:not(.today) {
+  background-color: #394450;
+  border: 0.2rem solid rgb(177, 177, 177);
+}
+p:hover,
+i:hover {
+  color: white;
+}
+.next-date,
+.past-date {
+  opacity: 0.5;
+}
+.today {
+  background-color: #d1446e;
+}
+#Syr {
+  /* width: 120px; */
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: #d1446e;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #003;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+#yr {
+  width: 230px;
+  position: relative;
+  overflow: hidden;
+}
+#yr::after {
+  content: "\25BC";
+  position: absolute;
+  top: 7px;
+  right: -23;
+  pointer-events: none;
+}
